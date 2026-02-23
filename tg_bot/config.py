@@ -18,7 +18,7 @@ class Development(Config):
     WHITELIST_USERS = []
     DEL_CMDS = True
     STRICT_GBAN = True
-    WORKERS = 4
+    WORKERS = 2
     ALLOW_EXCL = True
     BMERNU_SCUT_SRELFTI = None  ##### ဒီစာကြောင်းကိုထည့်ပါ #####
     
