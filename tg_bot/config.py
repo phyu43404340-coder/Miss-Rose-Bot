@@ -9,7 +9,7 @@ class Development(Config):
     OWNER_USERNAME = "logic_dex"
     
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://avnadmin:AVNS_y6q98elxsgXzYloNLMB@pg-14067a43-phyu43404340-1cc5.c.aivencloud.com:17798/defaultdb?sslmode=require"
+    SQLALCHEMY_DATABASE_URI = "postgresql://avnadmin:AVNS_y6q98elxsgXzYloNLMB@pg-14067a43-phyu43404340-1cc5.c.aivencloud.com:17798/defaultdb?sslmode=require"
     MESSAGE_DUMP = -1003529420898
     
     # OPTIONAL
@@ -18,9 +18,9 @@ class Development(Config):
     WHITELIST_USERS = []
     DEL_CMDS = True
     STRICT_GBAN = True
-    WORKERS = 2
+    WORKERS = 2  # ဒီမှာ 2 ကိုပြောင်းထားတယ်
     ALLOW_EXCL = True
-    BMERNU_SCUT_SRELFTI = None  ##### ဒီစာကြောင်းကိုထည့်ပါ #####
+    BMERNU_SCUT_SRELFTI = None
     
     # WEBHOOK setting
     WEBHOOK = True
