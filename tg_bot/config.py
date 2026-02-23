@@ -8,8 +8,8 @@ class Development(Config):
     OWNER_ID = 6440394225
     OWNER_USERNAME = "logic_dex"
     
-    # RECOMMENDED - PostgreSQL ကိုပြန်သုံးမယ်
-    SQLALCHEMY_DATABASE_URI = "postgresql://avnadmin:AVNS_y6q98elxsgXzYloNLMB@pg-14067a43-phyu43404340-1cc5.c.aivencloud.com:17798/defaultdb?sslmode=require"
+    # RECOMMENDED - Neon.tech PostgreSQL
+    SQLALCHEMY_DATABASE_URI = "postgresql://neondb_owner:npg_lgu6fSby3Yxi@ep-green-voice-aie7oa9e-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
     MESSAGE_DUMP = -1003529420898
     
     # OPTIONAL
