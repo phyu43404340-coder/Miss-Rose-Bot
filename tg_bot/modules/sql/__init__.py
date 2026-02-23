@@ -6,9 +6,13 @@ from tg_bot import DB_URI
 
 
 def start() -> scoped_session:
-    # SQLite အတွက် client_encoding မလိုဘူး
-    # PostgreSQL အတွက်လည်း client_encoding မထည့်တော့ဘူး (အားလုံးအဆင်ပြေအောင်)
-    engine = create_engine(DB_URI)
+    # Connection pool settings for better performance
+    engine = create_engine(
+        DB_URI,
+        pool_size=5,        # Connection 5 ခုအထိထား
+        max_overflow=0,      # Overflow မလုပ်ဘူး (connection 5 ခုပဲသုံးမယ်)
+        pool_pre_ping=True   # Connection အလုပ်လုပ်ရဲ့လားစစ်တယ်
+    )
     
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
