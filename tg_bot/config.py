@@ -8,8 +8,8 @@ class Development(Config):
     OWNER_ID = 6440394225
     OWNER_USERNAME = "logic_dex"
     
-    # RECOMMENDED - SQLite ကိုပြောင်းထားပါတယ်
-    SQLALCHEMY_DATABASE_URI = "sqlite:///missrose.db"
+    # RECOMMENDED - SQLite with proper parameters
+    SQLALCHEMY_DATABASE_URI = "sqlite:///missrose.db?check_same_thread=False"
     MESSAGE_DUMP = -1003529420898
     
     # OPTIONAL
