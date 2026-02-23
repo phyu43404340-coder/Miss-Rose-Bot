@@ -18,7 +18,7 @@ class Development(Config):
     WHITELIST_USERS = []
     DEL_CMDS = True
     STRICT_GBAN = True
-    WORKERS = 2
+    WORKERS = 1
     ALLOW_EXCL = True
     BMERNU_SCUT_SRELFTI = None
     
