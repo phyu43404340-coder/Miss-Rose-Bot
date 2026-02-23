@@ -8,8 +8,8 @@ class Development(Config):
     OWNER_ID = 6440394225
     OWNER_USERNAME = "logic_dex"
     
-    # RECOMMENDED - SQLite with proper parameters
-    SQLALCHEMY_DATABASE_URI = "sqlite:///missrose.db?check_same_thread=False"
+    # RECOMMENDED - PostgreSQL ကိုပြန်သုံးမယ်
+    SQLALCHEMY_DATABASE_URI = "postgresql://avnadmin:AVNS_y6q98elxsgXzYloNLMB@pg-14067a43-phyu43404340-1cc5.c.aivencloud.com:17798/defaultdb?sslmode=require"
     MESSAGE_DUMP = -1003529420898
     
     # OPTIONAL
